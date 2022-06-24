@@ -1,0 +1,50 @@
+
+<div class="card">
+	<button class="btn btn-primary" routerLink='/add'>ADD PRODUCT</button>
+</div>
+<div class="card">
+		<table class="table table-hover shopping-cart-wrap">
+		<thead class="text-muted">
+		<tr>
+		  <th scope="col">Product</th>
+		  <th scope="col" width="120">Expiry Date</th>
+		  <th scope="col" width="120">Price</th>
+		  <th scope="col" width="200" class="text-right">Action</th>
+		</tr>
+		</thead>
+		<tbody>
+		<tr *ngFor='let product of products'>
+			<td>
+				<figure class="media">
+					<div class="img-wrap"><img src="{{product.imageUrl}}" class="img-thumbnail img-sm"></div>
+					<figcaption class="media-body">
+						<h6 class="title text-truncate">{{product.productName}}</h6>
+						<dl class="param param-inline small">
+						  <dt>ID</dt>
+						  <dd>{{product.productId}}</dd>
+						</dl>
+						<dl class="param param-inline small">
+						  <dt>Description: </dt>
+						  <dd>{{product.description}}</dd>
+						</dl>
+					</figcaption>
+				</figure> 
+			</td>
+			<div class="price-wrap"> 
+				<var class="date">{{product.carName}}</var> 
+			</div>
+			<td> 
+				<div class="price-wrap"> 
+					<var class="price">{{product.price | currency:'INR'}}</var> 
+					<small class="text-muted">(INR)</small>
+				</div> <!-- price-wrap .// -->
+			</td>
+			<td class="text-right"> 
+			<button class="btn btn-outline-success btn-round"  name='update' value='update' (click)='update(product._id)'> Edit</button>
+			<button class="btn btn-outline-danger" name='delete'value='delete' (click)='delete(product._id)'>Remove</button>
+			</td>
+		</tr>
+		</tbody>
+		</table>
+		</div> <!-- card.// -->
+		

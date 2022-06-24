@@ -1,0 +1,18 @@
+    /* Remove the navbar's default rounded borders and increase the bottom margin */ 
+    nav {
+        background: #333;
+        box-shadow: 1px 1px 1px #111;
+        padding: 40px;
+      }
+    
+      .fa-2x {
+        font-size: 1.5rem !important;
+      }
+
+      h1{
+          color: aliceblue;
+      }
+      a{
+        text-decoration: none;
+      }
+        

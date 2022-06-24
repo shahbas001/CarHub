@@ -1,0 +1,22 @@
+
+.row img{
+  width: 100 px;
+  height: 100px;
+  align-content: center;
+
+}
+.row{
+  text-align: center; 
+
+}
+.col{
+
+  box-shadow: 10px;
+}
+.carousel-caption {
+ 
+  background: rgba(0, 0, 0, 0.35);
+  top: 300px;
+  bottom: auto;
+
+}

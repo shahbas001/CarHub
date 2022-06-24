@@ -1,0 +1,32 @@
+<main>
+        <div class="container">
+            <form (ngSubmit)="search()">
+                <div class="form-group frm">
+                    <div class="input-group">
+                    <input id="1" class="form-control" type="text" name="search" placeholder="Search..." required/>
+                    <span class="input-group-btn">
+                    <button class="btn btn-success srch" type="submit">
+                    <i class="glyphicon glyphicon-search " aria-hidden="true"></i> Search
+                    </button>
+                  </span>
+                </div>
+              </div>
+            </form>
+          <section class="text-center mb-4">
+            <div class="row wow fadeIn">
+              <div class="col-lg-3 col-md-6 mb-4 " *ngFor="let item of product">
+                <div class="card h-100">
+                  <div class="view overlay img">
+                    <img src="{{item.imageUrl}}" class="card-img-top"
+                      alt="">
+                  </div>
+                  <div class="card-body text-center">
+                      <h5>{{item.productName}}</h5>
+                    <h5>{{item.price | currency : 'INR'}}</h5>
+                    <a routerLink="/item" class="btn btn-primary" (click)=update(item)>Buy</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+    

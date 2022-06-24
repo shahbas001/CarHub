@@ -1,0 +1,13 @@
+.frm{
+    width: 75%;
+    align-self: center;
+    margin-top: 100px;
+    margin-left: 150px;
+    margin-bottom: 100px;;
+}
+img{
+    height: 150px;
+}
+.card-body{
+    height: 150px;
+}

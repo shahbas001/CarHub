@@ -1,0 +1,17 @@
+
+
+      
+<div class="container-fluid">
+        <div class="col-sm-6 mx-auto">
+                <div class="card mb-2">
+                    <div class="card-body">
+                    <h5 class="card-title">{{product.productName}}</h5>
+                    <p class="card-text m-1">Car Model : {{product.carName}}</p>
+                    <p class="card-text m-1">Description : {{product.description}}</p>
+                    <p class="card-text m-1">{{product.price | currency:INR}}</p>
+                    <!-- <button class="btn btn-primary mr-1" (click)="addToCart(item)">Add to cart</button> -->
+                    <button class="btn btn-primary btn-block" (click)='addToCart(product)' >Add to Cart</button>
+                    </div>
+                </div>
+        </div>
+</div>

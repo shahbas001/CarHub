@@ -1,0 +1,21 @@
+<hr><h1 class="text-center">{{item.itemBrand}} {{item.itemGender}}'s {{item.itemStyle}}</h1><hr>
+<div class="container-fluid">
+        <div class="col-sm-6 mx-auto">
+                <div class="card mb-2">
+                    <img src="{{item.itemImage}}"class="card-img-top" alt="...">
+                    <div class="card-body">
+                    <h5 class="card-title">{{item.itemBrand}}</h5>
+                    <p class="card-text m-1">{{item.itemColour}} coloured {{item.itemGender}}'s {{item.itemStyle}}</p>
+                    <p class="card-text m-1">Rs.{{item.itemPrice}}</p>
+                    <!-- <p class="card-text m-1">S : {{item.itemSize.s}} M : {{item.itemSize.s}} L :{{item.itemSize.s}} XL:{{item.itemSize.s}}</p> -->
+                    <div class="text-center">
+                        <a class="btn btn-light m-3 rounded-circle"> S </a>
+                        <a class="btn btn-light m-3 rounded-circle"> M </a>
+                        <a class="btn btn-light m-3 rounded-circle"> L </a>
+                        <a class="btn btn-light m-3 rounded-circle"> XL </a>
+                     </div>
+                    <button class="btn btn-primary btn-block" (click)="checkout(item._id)">Proceed</button>
+                    </div>
+                </div>
+        </div>
+</div>

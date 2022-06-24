@@ -1,0 +1,68 @@
+<div class="container">
+  <form class="form-horizontal" (ngSubmit)="submitMethod()">
+  <fieldset>
+  
+  <legend>{{pageTitle}}</legend>
+  
+  <div class="form-group">
+    <label class="col-md-4 control-label" for="product_id">PRODUCT ID</label>  
+    <div class="col-md-4">
+    <input id="productId" name="productId" [(ngModel)]="productItem.productId" placeholder="PRODUCT ID" class="form-control input-md" required="" type="number">
+      
+    </div>
+  </div>
+  
+  <div class="form-group">
+    <label class="col-md-4 control-label" for="product_name">PRODUCT NAME</label>  
+    <div class="col-md-4">
+    <input id="productName" name="productName" [(ngModel)]="productItem.productName" placeholder="PRODUCT NAME" class="form-control input-md" required="" type="text">
+      
+    </div>
+  </div>
+  
+  <div class="form-group">
+    <label class="col-md-4 control-label" for="product_name_fr">PRODUCT DESCRIPTION</label>  
+    <div class="col-md-4">
+    <input id="description" name="description" [(ngModel)]="productItem.description" placeholder="PRODUCT DESCRIPTION" class="form-control input-md" required="" type="text">
+      
+    </div>
+  </div>
+  
+  <div class="form-group">
+    <label class="col-md-4 control-label" for="available_quantity">CAR MODEL</label>  
+    <div class="col-md-4">
+    <input id="expiryDate" placeholder="CAR NAME" name="expiryDate" [(ngModel)]="productItem.carName" class="form-control input-md" required="" type="text">
+    </div>
+  </div>
+  
+  <div class="form-group">
+    <label class="col-md-4 control-label" for="available_quantity">PRICE</label>  
+    <div class="col-md-4">
+    <input id="price" name="price" [(ngModel)]="productItem.price" placeholder="PRICE" class="form-control input-md" required="" type="number">
+      
+    </div>
+  </div>
+  
+  <div class="form-group">
+    <label class="col-md-4 control-label" for="product_weight">IMAGE URL</label>  
+    <div class="col-md-4">
+    <input id="imageUrl" name="imageUrl" [(ngModel)]="productItem.imageUrl" placeholder="IMAGE URL" class="form-control input-md" required="" type="text">
+      
+    </div>
+  </div>
+  
+  <div class="form-group">
+    <div class="col-md-4">
+      <button id="singlebutton" name="singlebutton" class="btn btn-primary">Button</button>
+      <a routerLink='/admin' class="cancel"><b>Cancel</b></a>
+    </div>
+    </div>
+  
+  </fieldset>
+  </form>
+  </div>
+  
+  
+  
+  
+ 
